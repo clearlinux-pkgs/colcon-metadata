@@ -4,7 +4,7 @@
 #
 Name     : colcon-metadata
 Version  : 0.2.0
-Release  : 1
+Release  : 2
 URL      : https://files.pythonhosted.org/packages/b1/79/e6736f64a2016c583fcc65da628751af43cfee98cf4ff0e99412ff37ac4c/colcon-metadata-0.2.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b1/79/e6736f64a2016c583fcc65da628751af43cfee98cf4ff0e99412ff37ac4c/colcon-metadata-0.2.0.tar.gz
 Summary  : Extension for colcon to read package metadata from files.
@@ -13,6 +13,7 @@ License  : Apache-2.0
 Requires: colcon-metadata-python3
 Requires: colcon-metadata-python
 Requires: PyYAML
+Requires: colcon-core
 BuildRequires : buildreq-distutils3
 
 %description
@@ -44,7 +45,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1532980685
+export SOURCE_DATE_EPOCH=1533002571
 python3 setup.py build -b py3
 
 %install
