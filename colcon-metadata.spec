@@ -4,7 +4,7 @@
 #
 Name     : colcon-metadata
 Version  : 0.2.3
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/42/23/685d39ed5d91d672759fbc0e0ec138df03d570e59697d4b2d314307e7330/colcon-metadata-0.2.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/42/23/685d39ed5d91d672759fbc0e0ec138df03d570e59697d4b2d314307e7330/colcon-metadata-0.2.3.tar.gz
 Summary  : Extension for colcon to read package metadata from files.
@@ -21,7 +21,10 @@ BuildRequires : colcon-core
 %description
 colcon-metadata
 ===============
+
 An extension for `colcon-core <https://github.com/colcon/colcon-core>`_ to fetch and manage package metadata from repositories.
+
+For an example repository containing metadata see `colcon-metadata-repository <https://github.com/colcon/colcon-metadata-repository>`_.
 
 %package python
 Summary: python components for the colcon-metadata package.
@@ -36,6 +39,7 @@ python components for the colcon-metadata package.
 Summary: python3 components for the colcon-metadata package.
 Group: Default
 Requires: python3-core
+Provides: pypi(colcon-metadata)
 
 %description python3
 python3 components for the colcon-metadata package.
@@ -50,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1578599473
+export SOURCE_DATE_EPOCH=1582909692
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
